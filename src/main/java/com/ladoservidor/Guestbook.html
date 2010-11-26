@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Titulo da aplicacao</title>
+  </head>
+  <body>
+    <h2>Titulo da aplicacao</h2>
+    <form wicket:id="form">
+      <h3>Deixe um recado</h3>
+      <div wicket:id="validacoes">Mensagens de validacao do form</div>
+      <input wicket:id="mensagem" type="text" value="[deixe uma msg]" />
+      <input type="submit" value="Enviar" />
+    </form>
+    <h3>Recados enviados:</h3>
+    <ul wicket:id="ajaxpage">
+      <li wicket:id="recados">
+        <p>
+          <span wicket:id="recado">Algum recado deixado</span>  <br/>
+          <span wicket:id="data">21:30 Quarta-feira</span> | <a href="#" wicket:id="apagar">apagar</a> <br/>
+        </p>
+      </li>
+      <div wicket:id="paginacao">
+        1 | <a href="#">2</a> | <a href="#">3</a> | <a href="#">4</a>
+      </div>
+    </ul>
+  </body>
+</html>
